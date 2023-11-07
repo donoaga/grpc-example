@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package cart_r;
+
+service CartReadGrpcService {
+  rpc findAll (CartRequest) returns (CartResponse);
+}
+
+message CartRequest {}
+
+message Cart {
+  string id = 0;
+  string name = 1;
+  int32 price = 2;
+}
+
+message CartResponse {
+  repeated Cart list = 0;
+}

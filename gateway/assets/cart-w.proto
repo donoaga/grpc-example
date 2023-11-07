@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package cart_w;
+
+service CartWriteGrpcService {
+  rpc create (CreateCartRequest) returns (Cart);
+}
+
+message Cart {
+  string id = 0;
+  string name = 1;
+  int32 price = 2;
+}
+
+
+message CreateCartRequest {
+  string name = 0;
+  int32 price = 1;
+}
