@@ -46,6 +46,7 @@ To get started with this project, follow these steps:
     * gRPC: High-performance inter-service communication.
     * Docker: Containerization for consistency.
     * TypeScript: Ensures code quality.
+    * MongoDB: Data storage.
 
 ## Contribuitors
 
